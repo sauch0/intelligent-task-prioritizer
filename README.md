@@ -1,4 +1,4 @@
-# 🚀 Intelligent Task Prioritizer
+# 🚀 Intelligent Task Priotizer
 
 Intelligent Task Prioritizer is a smart, full-stack task management application designed to help users focus on what truly matters. Unlike traditional to-do lists, this application uses a scoring algorithm to automatically prioritize your tasks based on urgency, importance, and "quick win" potential.
 
@@ -36,7 +36,7 @@ Intelligent Task Prioritizer is a smart, full-stack task management application 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/sauch0/intelligent-task-prioritizer.git
+   git clone https://github.com/sauch0/intelligent-task-priotizer.git
    cd intelligent-task-prioritizer
    ```
 
