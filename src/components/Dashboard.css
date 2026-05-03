@@ -1,0 +1,258 @@
+:root {
+    --sidebar-bg: #faf9f8;
+    --primary-color: #db4c3f;
+    --text-main: #202020;
+    --text-muted: #666;
+    --border-color: #f0f0f0;
+    --hover-bg: #eee;
+}
+
+.dashboard-layout {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    color: var(--text-main);
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 280px;
+    background-color: var(--sidebar-bg);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.sidebar-header {
+    margin-bottom: 24px;
+    padding: 8px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.add-task-sidebar-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    color: var(--primary-color);
+    font-weight: 700;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.add-task-sidebar-btn:hover {
+    background-color: var(--hover-bg);
+}
+
+.plus-icon {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.nav-group {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    color: var(--text-main);
+    font-size: 14px;
+}
+
+.nav-item:hover {
+    background-color: var(--hover-bg);
+}
+
+.nav-item.active {
+    background-color: #ffefe5;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.nav-icon {
+    font-size: 18px;
+}
+
+/* Main Content Styling */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.content-header {
+    padding: 30px 50px 10px;
+}
+
+.content-header h2 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.task-list-container {
+    padding: 20px 50px;
+    flex: 1;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+    transition: background 0.2s;
+}
+
+.task-checkbox {
+    all: unset;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px !important;
+    min-height: 20px !important;
+    flex: 0 0 20px !important;
+    border: 1.5px solid #ccc;
+    border-radius: 50% !important;
+    background: #fff;
+    cursor: pointer;
+    margin-top: 3px;
+    box-sizing: border-box !important;
+    color: var(--primary-color);
+    font-size: 11px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.task-checkbox:hover {
+    border-color: var(--primary-color);
+    background: #fff5f5;
+}
+
+.task-item.completed .task-checkbox {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.task-details {
+    flex: 1;
+}
+
+.task-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.task-item.completed .task-title {
+    text-decoration: line-through;
+    color: var(--text-muted);
+}
+
+.task-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.task-delete-btn {
+    opacity: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.task-item:hover .task-delete-btn {
+    opacity: 1;
+}
+
+/* Empty State */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60%;
+    color: var(--text-muted);
+}
+
+.empty-img {
+    width: 200px;
+    margin-bottom: 24px;
+}
+
+.empty-state h3 {
+    color: var(--text-main);
+    margin-bottom: 8px;
+}
+
+.empty-state p {
+    max-width: 300px;
+    margin-bottom: 24px;
+}
+
+.add-task-empty-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-task-empty-btn:hover {
+    background-color: #c53d2e;
+}
+
+.logout-nav {
+    margin-top: auto;
+}
