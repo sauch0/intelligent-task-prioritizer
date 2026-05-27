@@ -1,4 +1,4 @@
-# 🚀 Intelligent Task Priotizer
+# 🚀 Intelligent Task Prioritizer
 
 Intelligent Task Prioritizer is a smart, full-stack task management application designed to help users focus on what truly matters. Unlike traditional to-do lists, this application uses a scoring algorithm to automatically prioritize your tasks based on urgency, importance, and "quick win" potential.
 
